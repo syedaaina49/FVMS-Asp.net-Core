@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\student\\Desktop\\Asp.net Core 2024-07D\\Asp.net Core 2024-07D\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5478718C-4009-4060-8676-B671E183E55B}|Asp.net Core 2024-07D\\Asp.net Core 2024-07D.csproj|c:\\users\\student\\desktop\\asp.net core 2024-07d\\asp.net core 2024-07d\\asp.net core 2024-07d\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5478718C-4009-4060-8676-B671E183E55B}|Asp.net Core 2024-07D\\Asp.net Core 2024-07D.csproj|solutionrelative:asp.net core 2024-07d\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\Asp.net Core 2024-07D\\Asp.net Core 2024-07D\\Asp.net Core 2024-07D\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Asp.net Core 2024-07D\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\student\\Desktop\\Asp.net Core 2024-07D\\Asp.net Core 2024-07D\\Asp.net Core 2024-07D\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Asp.net Core 2024-07D\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T10:54:34.535Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

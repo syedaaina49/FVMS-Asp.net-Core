@@ -1,0 +1,156 @@
+﻿
+
+@model Asp.net_Core_2024_07D.Models.Voucher
+
+@if (ViewBag.Message != null)
+{
+
+    <script>
+        alert("@ViewBag.Message")
+    </script>
+
+}
+
+
+
+<div class="container my-5">
+
+    <!-- Receipt Form -->
+    <div class="card mb-4 animate__animated animate__fadeInDown">
+        <div class="card-header">
+            <i class="bi bi-receipt"></i> Fees Receipt Form
+        </div>
+        <div class="card-body">
+                    
+                 <form asp-action="Create" asp-controller="Voucher" method="post">
+            <div class="row g-3">
+
+
+                    <div class="col-md-3">
+                        <label class="form-label">Receipt No.</label>
+                        <input type="text" asp-for="ReceiptNo" class="form-control" placeholder="Auto Generated">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label">Dated</label>
+                        <input type="date" asp-for="Date" class="form-control">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label">Enrollment Number</label>
+                        <input type="text" asp-for="EnrollmentNum" class="form-control">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label">Full Name</label>
+                        <input type="text" asp-for="FullName" class="form-control">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Address</label>
+                        <input type="text" asp-for="Address" class="form-control">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label">Payment Method</label>
+                        <select class="form-select" asp-for="PaymentMethod">
+                            <option>Select</option>
+                            <option>Cash</option>
+                            <option>Online</option>
+                            <option>Cheque</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label">Payment Reference No.</label>
+                        <input type="text" asp-for="PaymentReference" class="form-control">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label">Cash Amount</label>
+                        <input type="number" asp-for="CashAmount" class="form-control">
+                    </div>
+
+                    <div class="col-md-3">
+                        <label class="form-label">Online / Cheque Amount</label>
+                        <input type="number" asp-for="OnlineAmount" class="form-control">
+                    </div>
+   
+            </div>
+
+            <div class="text-end mt-4">
+                <button class="btn btn-warning px-4">
+                    <i class="bi bi-save"></i> Generate Voucher
+                </button>
+            </div>
+
+                </form>
+
+        </div>
+    </div>
+
+
+
+
+@* ============================================= *@
+@* ============================================= *@
+@* ============================================= *@
+
+
+
+    <!-- Preview Table -->
+    @if (ViewBag.ShowPreview != null)
+    {
+
+        var data = ViewBag.PreviewData as Voucher;
+
+
+        <hr />
+        <div class="card animate__animated animate__fadeInUp">
+            <div class="card-header">
+                <i class="bi bi-eye"></i> Receipt Preview
+            </div>
+
+            <div class="card-body table-responsive">
+                <table class="table table-bordered align-middle text-center">
+                    <thead>
+                        <tr>
+                            <th>Receipt No.</th>
+                            <th>Enrollment No.</th>
+                            <th>Fee Amount</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@data.ReceiptNo</td>
+                            <td>@data.EnrollmentNum</td>
+                            <td>@data.CashAmount</td>
+                            <td>@data.Date</td>
+                            <td>
+                                <span class="badge badge-paid">Paid</span>
+                            </td>
+                            <td>
+                                <div class="action-area d-flex gap-2 justify-content-center">
+                                    <button class="btn btn-warning btn-sm">
+                                        <i class="bi bi-eye"></i> Preview
+                                    </button>
+                                    <button class="btn btn-danger btn-sm">
+                                        <i class="bi bi-trash"></i> Delete
+                                    </button>
+                                    <button class="btn btn-dark btn-sm">
+                                        <i class="bi bi-printer"></i> Print
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    }
+
+</div>
